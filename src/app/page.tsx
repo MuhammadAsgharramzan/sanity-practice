@@ -7,7 +7,6 @@ import Image from "next/image";
 import Hero from "./components/hero/page";
 
 export default async function home() {
-<Hero />
   const data = await client.fetch(`*[_type == "product"]{
     productName,
     productPrice,
